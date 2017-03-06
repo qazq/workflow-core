@@ -1,6 +1,6 @@
 {
   "version": "1.0.0-*",
-  "testRunner": "mspec",
+  
   "dependencies": {
     "dotnet-test-mspec": "0.2.0",
     "FluentAssertions": "4.17.0",
@@ -15,7 +15,8 @@
     "WorkflowCore": "1.0.5-*",
     "WorkflowCore.TestAssets": "1.0.0-*",
     "Microsoft.Extensions.Logging.Console": "1.1.0",
-    "WorkflowCore.Users": "1.0.5-*"
+    "WorkflowCore.Users": "1.0.5-*",
+    "xunit": "2.2.0"
   },
 
   "frameworks": {
