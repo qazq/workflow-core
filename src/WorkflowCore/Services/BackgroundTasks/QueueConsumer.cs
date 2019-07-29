@@ -73,10 +73,11 @@ namespace WorkflowCore.Services.BackgroundTasks
                             await Task.Delay(Options.IdleTime, cancelToken);
                         continue;
                     }
-                    
+
                     if (activeTasks.ContainsKey(item))
                     {
                         secondPasses.Add(item);
+                        Console.WriteLine($">>>>>>>>> secondPasses {Queue}, activeTasks.ContainsKey(item): {activeTasks.ContainsKey(item)}");
                         continue;
                     }
 

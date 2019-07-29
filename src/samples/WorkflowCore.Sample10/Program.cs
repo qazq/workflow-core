@@ -40,6 +40,7 @@ namespace WorkflowCore.Sample10
             //config logging
             var loggerFactory = serviceProvider.GetService<ILoggerFactory>();
             //loggerFactory.AddDebug(LogLevel.Debug);
+            loggerFactory.AddConsole();
             return serviceProvider;
         }
     }

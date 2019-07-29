@@ -15,7 +15,7 @@ namespace WorkflowCore.Sample10
         {
             builder
                 .StartWith<SayHello>()
-                .While(data => data.Counter < 3)
+                .While(data => data.Counter < 300000000)  // big count to highlight the workflow executes interrupt issue
                     .Do(x => x
                         .StartWith<DoSomething>()
                         .Then<IncrementStep>()
